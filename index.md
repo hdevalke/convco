@@ -45,6 +45,17 @@ brew install hdevalke/formulae/convco
 Download the latest [convco-windows.zip](https://github.com/hdevalke/convco/releases/latest/download/convco-windows.zip) zip file.
 Extract `convco.exe` into a folder in your `PATH`.
 
+### Docker
+
+[![docker build status](https://img.shields.io/docker/cloud/build/hdevalke/convco)](https://hub.docker.com/r/hdevalke/convco)
+[![docker pulls](https://img.shields.io/docker/pulls/hdevalke/convco)](https://hub.docker.com/r/hdevalke/convco)
+
+Mount the current work directory in a volume and run convco in it.
+
+```sh
+docker run --rm -v "$PWD:/tmp" -w /tmp hdevalke/convco --help
+```
+
 ### From source
 
 [![Crates.io](https://img.shields.io/crates/d/convco)](https://crates.io/crates/convco)
