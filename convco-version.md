@@ -6,11 +6,17 @@ permalink: /version/
 
 Version is a tool to print out the current or next version of the git repository.
 The current version is calculated based on the version tags.
-The next version is calculated based on conventional commits added since the current version.
+The next version is calculated based on conventional commits added since the current version:
 
 * A commit of type `fix` will increase the `PATCH` version.
 * A commit of type `feat` will increase the `MINOR` version.
 * A commit with a breaking change increases the `MAJOR` version.
+
+Major version zero (`0.y.z`) has the following rules:
+
+* A commit of type `fix` will increase the `PATCH` version.
+* A commit of type `feat` will increase the `PATCH` version.
+* A commit with a breaking change increases the `MINOR` version.
 
 ## Examples
 
